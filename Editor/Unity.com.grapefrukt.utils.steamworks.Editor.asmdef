@@ -1,0 +1,17 @@
+{
+    "name": "Unity.com.grapefrukt.utils.steamworks.Editor",
+    "references": [
+        "GUID:7759686da4bf5dd45957b607ce987697"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

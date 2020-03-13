@@ -36,14 +36,14 @@ public class RedistInstall {
 		string strSource = Path.Combine(Path.Combine(strCWD, path), filename);
 		string strDest = Path.Combine(strCWD, filename);
 
-		if (!File.Exists(strSource)) {
-			Debug.LogWarning(string.Format("[Steamworks.NET] Could not copy {0} into the project root. {0} could not be found in '{1}'. Place {0} from the Steamworks SDK in the project root manually.", filename, Path.Combine(strCWD, path)));
-			return;
-		}
-
 		if (File.Exists(strDest)) {
 			if (!bCheckDifference)
 				return;
+			
+			if (!File.Exists(strSource)) {
+				Debug.LogWarning(string.Format("[Steamworks.NET] Could not copy {0} into the project root. {0} could not be found in '{1}'. Place {0} from the Steamworks SDK in the project root manually.", filename, Path.Combine(strCWD, path)));
+				return;
+			}
 
 			if (File.GetLastWriteTime(strSource) == File.GetLastWriteTime(strDest)) {
 				FileInfo fInfo = new FileInfo(strSource);
