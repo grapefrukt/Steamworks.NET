@@ -1,0 +1,18 @@
+{
+  "name": "com.grapefrukt.utils.steamworks",
+  "version": "1.0.0",
+  "displayName": "Steamworks.NET",
+  "description": "a C# Wrapper for Valve's Steamworks API",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "dependencies": {},
+ "keywords": [
+    "steam",
+    "steamworks"
+  ],
+  "author": {
+    "name": "Riley Labrecque",
+    "email": "unity@example.com",
+    "url": "https://www.unity3d.com"
+  }
+}
